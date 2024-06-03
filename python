@@ -1,0 +1,14 @@
+# Example code for a fitness tracker app in Python
+class FitnessTracker:
+    def __init__(self):
+        self.steps = 0
+
+    def add_steps(self, steps):
+        self.steps += steps
+
+    def get_steps(self):
+        return self.steps
+
+tracker = FitnessTracker()
+tracker.add_steps(1000)
+print("Steps today:", tracker.get_steps())
